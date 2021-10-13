@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'Chravel'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_113FAC918B7B4272AF6AFFE812674824 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3368E04549064BA29227544C45B9C4A9 }}
           package: .
