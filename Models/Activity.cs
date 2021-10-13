@@ -8,21 +8,26 @@ namespace Chravel.Models
 {
     public class Activity
     {
+        [Range(1,999999)]
         public int ActivityId { get; set; }
 
         [Required]
+        [MaxLength(20)]
         public string ActivityName { get; set; }
 
         [Required]
         public string Detail { get; set; }
 
         [Required]
+        [Range(1, 99999)]
         public decimal AveragePricePerPerson { get; set; }
 
         [Required]
+        [Range(1, 100)]
         public int ActivityTypeId { get; set; }
 
         [Required]
+        [Range(1, 999999)]
         public int LocactionId { get; set; }
 
 

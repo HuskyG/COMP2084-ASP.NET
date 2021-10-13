@@ -8,6 +8,7 @@ namespace Chravel.Models
 {
     public class DailySchedule
     {
+        [Range(1, 999999)]
         public int DailyScheduleId { get; set; }
 
         [Required]
@@ -17,12 +18,15 @@ namespace Chravel.Models
         public string Time { get; set; }
 
         [Required]
+        [Range(0, 24)]
         public decimal Duration { get; set; }
 
         [Required]
+        [Range(1, 999999)]
         public int ActivityId { get; set; }
 
         [Required]
+        [Range(1, 999999)]
         public int TripScheduleId { get; set; }
 
         //Add Parent ref (1 TripSchedule => Many Daily Schedules)
