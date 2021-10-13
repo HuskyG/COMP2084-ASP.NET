@@ -24,5 +24,13 @@ namespace Chravel.Models
 
         [Required]
         public int TripId { get; set; }
+
+        //Add Parent ref (1 TripSchedule => Many Daily Schedules)
+        public TripSchedule TripSchedule { get; set; }
+
+        //Add Parent ref (1 Activity => Many Daily Schedules)
+        public Activities Activities { get; set; }
+
+
     }
 }

@@ -13,6 +13,7 @@ namespace Chravel.Models
         [Required]
         public string TypeName { get; set; }
 
-
+        //Add child ref (1 Type => Many Activities)
+        public List<Activities> Activities { get; set; }
     }
 }

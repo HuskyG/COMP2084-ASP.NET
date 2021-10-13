@@ -15,7 +15,8 @@ namespace Chravel.Models
 
         public string UserId { get; set; }
 
-        //Add child ref to Daily schedule
-        
+        //Add child ref of Daily schedule (1 TripShedule => Many Daily Schedules)
+        public List<DailySchedule> DailySchedules { get; set; }
+
     }
 }
