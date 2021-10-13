@@ -24,14 +24,5 @@ namespace Chravel.Models
 
         [Required]
         public string LocationName { get; set; }
-
-        [Required]
-        public string Detail { get; set; }
-
-        [Required]
-        public decimal AveragePricePerPerson { get; set; }
-
-        [Required]
-        public int TypeId { get; set; }
     }
 }

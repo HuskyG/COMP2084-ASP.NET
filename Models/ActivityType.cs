@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Chravel.Models
 {
-    public class District
+    public class ActivityType
     {
-        public int DistrictId { get; set; }
+        public int TypeId { get; set; }
 
         [Required]
-        public string DistrictName { get; set; }
+        public string TypeName { get; set; }
+
+
     }
 }
