@@ -8,12 +8,12 @@ namespace Chravel.Models
 {
     public class ActivityType
     {
-        public int TypeId { get; set; }
+        public int ActivityTypeId { get; set; }
 
         [Required]
         public string TypeName { get; set; }
 
         //Add child ref (1 Type => Many Activities)
-        public List<Activities> Activities { get; set; }
+        public List<Activity> Activities { get; set; }
     }
 }

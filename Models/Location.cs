@@ -26,6 +26,6 @@ namespace Chravel.Models
         public string LocationName { get; set; }
 
         //Add child ref (1 location => Many Activities)
-        public List<Activities> Activities { get; set; }
+        public List<Activity> Activities { get; set; }
     }
 }

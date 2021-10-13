@@ -7,7 +7,7 @@ namespace Chravel.Models
 {
     public class TripSchedule
     {
-        public int TripId { get; set; }
+        public int TripScheduleId { get; set; }
 
         public string TripName { get; set; }
 

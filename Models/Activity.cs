@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Chravel.Models
 {
-    public class Activities
+    public class Activity
     {
         public int ActivityId { get; set; }
 
@@ -20,14 +20,14 @@ namespace Chravel.Models
         public decimal AveragePricePerPerson { get; set; }
 
         [Required]
-        public int TypeId { get; set; }
+        public int ActivityTypeId { get; set; }
 
         [Required]
         public int LocactionId { get; set; }
 
 
         //Add parent ref
-        public Type Type { get; set; }
+        public ActivityType ActivityType { get; set; }
 
         public Location Location { get; set; }
 
